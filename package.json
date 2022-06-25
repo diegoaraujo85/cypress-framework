@@ -6,7 +6,8 @@
   "scripts": {
     "cyo": "cypress open",
     "cyr": "cypress run",
-    "cysnap": "cypress run --env updateSnapshots=true"
+    "cysnap": "cypress run --env updateSnapshots=true",
+    "cydash": "npx cypress run --record --key 633fb861-2657-45ee-99c3-a9d1bf17c9d8"
   },
   "keywords": [
     "cypress",

@@ -1,3 +1,5 @@
+import { login_username } from "../../../config";
+
 export default class Navbar{
   static clickOnLogo(){
     cy.get('.brand').click();
@@ -7,7 +9,21 @@ export default class Navbar{
     cy.get('#searchTerm').type(`${text} {enter}`);
   }
 
+  static displaySignInButton(){
+    cy.isVisible('#signin_button');
+  }
+
   static clickSignIn(){
-    cy.get('#signin_button').click();
+    // cy.get('#signin_button').click();
+    cy.clickSelector('#signin_button');
+  }
+
+  static clickSettings(){
+    cy.contains('Settings').click();
+  }
+
+  static logout(){
+    cy.contains(login_username).click();
+    cy.get('#logout_link').click();
   }
 }

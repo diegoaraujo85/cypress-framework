@@ -1,10 +1,10 @@
 {
   "projectId": "z5xa88",
-  "chromeWebSecurity": false,
+  "watchForFileChanges": true,
+  "chromeWebSecurity": true,
   "waitForAnimation": true,
   "animationDistanceTreshold": 20,
   "defaultCommandTimeout": 10000,
-  "watchForFileChanges": false,
   "viewportWidth": 1000,
   "viewportHeight" :600,
   "waitForAnimations": true,
